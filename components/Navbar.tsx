@@ -1,7 +1,6 @@
 import Link from "next/link";
 import QuilPen from "remixicon-react/QuillPenFillIcon"
 import Home from "remixicon-react/Home2FillIcon"
-import Sun from "remixicon-react/SunFillIcon"
 import LogOut from "remixicon-react/LogoutCircleLineIcon"
 import {destroyCookie} from "nookies";
 import {useRouter} from 'next/navigation'
@@ -25,10 +24,6 @@ export default function Navbar() {
                 <Link
                     href={"/post"}>
                     <QuilPen/>
-                </Link>
-                <Link
-                    href={"/lightMode"}>
-                    <Sun/>
                 </Link>
                 <div className={"cursor-pointer hover:text-red-700 duration-300"} onClick={handleLogout}>
                     <LogOut/>
